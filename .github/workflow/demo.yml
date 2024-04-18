@@ -1,0 +1,24 @@
+name: demo to setup a project with github actions
+#sự kiện trigger
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checking out code
+        run: actions/checkout@v2
+
+      - name: setting up java env
+        run: actions/setup-java@v1
+        with:
+          java-version: 17
+
+      - name: gant permissions
+        run: chmod +x gradlew
+
+      - name: build actions
+        run: ./gradlew build
