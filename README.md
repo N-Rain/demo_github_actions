@@ -10,3 +10,4 @@
 **Pull img**
 ![image](https://github.com/N-Rain/demo_github_actions/assets/113491261/a0900b68-e545-4971-9a96-8206424be5fe)
 **Run docker img**
+![image](https://github.com/N-Rain/demo_github_actions/assets/113491261/dac848d3-87b0-44da-b480-268c728cca89)
