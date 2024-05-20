@@ -14,6 +14,10 @@ java {
 repositories {
 	mavenCentral()
 }
+bootJar {
+	archivesBaseName = 'kttkpm_stringboot_img_gitaction' // Tên của tệp JAR
+	destinationDirectory = file("$buildDir/target") // Thư mục đích
+}
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
