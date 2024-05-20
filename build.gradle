@@ -14,8 +14,19 @@ java {
 repositories {
 	mavenCentral()
 }
+// Tạo task để tạo thư mục đích nếu nó không tồn tại
+task createTargetDir(type: Copy) {
+	def targetDir = "$buildDir/target"
+	from('')
+	into(targetDir)
+	onlyIf {!file(targetDir).exists()}
+}
+
+// Khi thực hiện task bootJar, trước tiên chạy task createTargetDir để tạo thư mục đích nếu cần
+bootJar.dependsOn(createTargetDir)
+
 bootJar {
-	archivesBaseName = 'kttkpm_stringboot_img_gitaction.jar' // Tên của tệp JAR
+	archivesBaseName = 'kttkpm_stringboot_img_gitaction' // Tên của tệp JAR
 	destinationDirectory = file("$buildDir/target") // Thư mục đích
 }
 
