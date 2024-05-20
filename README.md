@@ -14,3 +14,6 @@
 ![image](https://github.com/N-Rain/demo_github_actions/assets/113491261/dac848d3-87b0-44da-b480-268c728cca89)
 
 ![image](https://github.com/N-Rain/demo_github_actions/assets/113491261/6b25a95b-5072-4d25-920b-98011c9b1276)
+
+**Tham khảo**
+[](https://www.youtube.com/watch?v=NppkHKvnrqc&t=822s)
