@@ -15,7 +15,7 @@ repositories {
 	mavenCentral()
 }
 bootJar {
-	archivesBaseName = 'kttkpm_stringboot_img_gitaction' // Tên của tệp JAR
+	archivesBaseName = 'kttkpm_stringboot_img_gitaction.jar' // Tên của tệp JAR
 	destinationDirectory = file("$buildDir/target") // Thư mục đích
 }
 
