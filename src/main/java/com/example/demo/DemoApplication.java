@@ -11,7 +11,7 @@ public class DemoApplication {
 
 	@GetMapping
 	public String welcome(){
-		return "Hello Build & Push Docker Image use Spring boot application using Github Actions ";
+		return "Hello Build & Push Docker Image use Spring boot application using GA ";
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
